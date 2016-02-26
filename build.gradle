@@ -3,9 +3,10 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 //apply plugin: 'spring-boot'
 apply plugin: 'war'
+//apply plugin: 'jetty'
 apply plugin: 'org.akhikhl.gretty'
 
-jar {
+war {
     baseName = 'helloSpringMvc'
     version =  '0.1.0'
 }
@@ -20,10 +21,11 @@ targetCompatibility = 1.8
 
 dependencies {
     //compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    //compile("org.springframework.boot:spring-boot-starter-web:1.3.2.RELEASE")
     compile 'org.springframework:spring-webmvc:4.2.4.RELEASE'
     compile 'javax.servlet:jstl:1.2'
     compile 'javax.servlet.jsp:jsp-api:2.2.1-b03'
-    testCompile("junit:junit")
+    //testCompile("junit:junit")
     providedCompile 'javax.servlet:servlet-api:2.5'
 }
 
@@ -42,6 +44,8 @@ gretty {
     port = 8080
     contextPath = '/'
     servletContainer = 'jetty9' //tomcat7 or tomcat8
+    consoleLogEnabled = "false"
+    loggingLevel = 'ERROR'
 }
 
 task wrapper(type: Wrapper) {
