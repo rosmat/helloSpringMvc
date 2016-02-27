@@ -11,17 +11,17 @@
         </layout>
     </appender>
 
-    <logger name="org.springframework" level="error"
+    <logger name="org.springframework" level="ERROR"
             additivity="false">
         <appender-ref ref="STDOUT" />
     </logger>
 
-    <logger name="com.mycompany.helloworld" level="error"
+    <logger name="com.mycompany.helloworld" level="ERROR"
             additivity="false">
         <appender-ref ref="STDOUT" />
     </logger>
 
-    <root level="error">
+    <root level="ERROR">
         <appender-ref ref="STDOUT" />
     </root>
 
