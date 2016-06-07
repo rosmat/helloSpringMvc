@@ -1,8 +1,5 @@
 package com.mycompany.helloworld.test1;
 
-import com.mycompany.helloworld.test1.Category;
-import com.mycompany.helloworld.test1.Product;
-
 import java.util.ArrayList;
 import java.util.List;
 
