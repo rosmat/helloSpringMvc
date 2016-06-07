@@ -17,7 +17,7 @@ public class ProductTag extends SimpleTagSupport {
     public void doTag() throws JspException, IOException {
         JspWriter w = getJspContext().getOut();
         w.println("<div class=\"product\">");
-        w.println("<img src=\"" + "/resources/images/" + (product.getPrice()+1) + ".png\"  + height=\"20\" width=\"20\" />");
+        w.println("<img src=\"" + "/resources/images/" + product.getPrice() + ".png\"  + height=\"20\" width=\"20\" />");
         w.println("<span class=\"productname\">" + product.getName() + "</span>,");
         w.println("<span class=\"price\">$" + product.getPrice() + "</span></div>");
     }
