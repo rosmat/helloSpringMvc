@@ -13,7 +13,7 @@
 <body>
 <div id="maincontainer">
     <div id="topsection">
-        <div class="innertube"><h1>Company Title .....</h1></div>
+        <div class="innertube"><h1>Framework test</h1></div>
     </div>
     <div id="contentwrapper">
         <div id="contentcolumn">
