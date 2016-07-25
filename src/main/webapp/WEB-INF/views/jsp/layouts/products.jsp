@@ -3,7 +3,7 @@
 <%@ taglib prefix="company" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="company2" uri="company" %>
 
-<company:header title="Products Listing" />
+<company:header title="Product listing" />
 
 <table>
     <c:forEach var="product" items="${products}">
