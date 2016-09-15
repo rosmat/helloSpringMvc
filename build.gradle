@@ -43,7 +43,7 @@ buildscript {
 gretty {
     port = 8080
     contextPath = '/'
-    servletContainer = 'jetty9' //tomcat7 or tomcat8
+    servletContainer = 'tomcat7' //tomcat7 or tomcat8
     consoleLogEnabled = "false"
     loggingLevel = 'ERROR'
 }

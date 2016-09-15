@@ -1,7 +1,5 @@
 package com.mycompany.helloworld.test1;
 
-import com.mycompany.helloworld.test1.Category;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
